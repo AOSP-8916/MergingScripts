@@ -4,6 +4,18 @@ cd bionic
 git push origin oreo backup --force
 cd ..
 
+cd build_make
+git push origin oreo backup --force
+cd ..
+
+cd build_soong
+git push origin oreo backup --force
+cd ..
+
+cd build_kati
+git push origin oreo backup --force
+cd ..
+
 
 cd bootable_recovery
 git push origin oreo backup --force

@@ -9,6 +9,33 @@ git checkout oreo
 cd ..
 
 
+git clone ssh://git@github.com/AOSP-8916/build_make -b oreo
+cd build_make
+git remote add goo https://android.googlesource.com/platform/build
+git fetch goo -t android-8.0.0_r10
+git checkout -B backup
+git checkout oreo
+cd ..
+
+
+git clone ssh://git@github.com/AOSP-8916/build_soong -b oreo
+cd build_soong
+git remote add goo https://android.googlesource.com/platform/build/soong
+git fetch goo -t android-8.0.0_r10
+git checkout -B backup
+git checkout oreo
+cd ..
+
+
+git clone ssh://git@github.com/AOSP-8916/build_kati -b oreo
+cd build_kati
+git remote add goo https://android.googlesource.com/platform/build/kati
+git fetch goo -t android-8.0.0_r10
+git checkout -B backup
+git checkout oreo
+cd ..
+
+
 git clone ssh://git@github.com/AOSP-8916/bootable_recovery -b oreo
 cd bootable_recovery
 git remote add goo https://android.googlesource.com/platform/bootable/recovery
@@ -187,3 +214,4 @@ git fetch goo -t android-8.0.0_r10
 git checkout -B backup
 git checkout oreo
 cd ..
+
