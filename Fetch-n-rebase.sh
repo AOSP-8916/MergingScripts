@@ -90,15 +90,6 @@ git checkout oreo
 cd ..
 
 
-git clone ssh://git@github.com/AOSP-8916/hardware_qcom_wlan -b oreo
-cd hardware_qcom_wlan
-git remote add goo https://android.googlesource.com/platform/hardware/qcom/wlan
-git fetch goo -t android-8.0.0_r10
-git checkout -B backup
-git checkout oreo
-cd ..
-
-
 git clone ssh://git@github.com/AOSP-8916/packages_apps_Camera2 -b oreo
 cd packages_apps_Camera2
 git remote add goo https://android.googlesource.com/platform/packages/apps/Camera2
