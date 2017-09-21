@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git clone ssh://git@github.com/AOSP-8916/bionic -b oreo
 cd bionic
 git remote add goo https://android.googlesource.com/platform/bionic
