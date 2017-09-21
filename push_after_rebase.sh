@@ -50,11 +50,6 @@ git push origin oreo backup --force
 cd ..
 
 
-cd hardware_qcom_wlan
-git push origin oreo backup --force
-cd ..
-
-
 cd packages_apps_Camera2
 git push origin oreo backup --force
 cd ..
