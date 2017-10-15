@@ -1,127 +1,288 @@
 #!/bin/bash
 
 cd bionic
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
+
+
+cd build_make
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
+
+
+cd build_soong
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
+
+
+cd build_kati
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd bootable_recovery
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd external_selinux
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd frameworks_av
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd frameworks_base
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd frameworks_native
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd hardware_interfaces
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd hardware_libhardware
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd hardware_libhardware_legacy
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd hardware_qcom_gps
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd packages_apps_Camera2
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd packages_apps_Gallery2
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd packages_apps_Settings
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd packages_inputmethods_LatinIME
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd packages_providers_MediaProvider
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd packages_services_Telephony
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd system_bt
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd system_core
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd system_media
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd system_sepolicy
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
 
 
 cd system_vold
-git rebase -i --ignore-date android-8.0.0_r17
-git branch
-cd ..
-
+git checkout oreo
+git rebase -i android-8.0.0_r12
+echo "If successful, type y"
+read a
+if [ "$a" = "y" ]; then
+	cd ..
+else 
+	exit 
+fi
